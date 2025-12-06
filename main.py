@@ -26,7 +26,7 @@ def init_services():
     # Qdrant client
     url = "https://4ef7f8a3-ee49-4cb5-b53b-41c05f890f41.europe-west3-0.gcp.cloud.qdrant.io:6333"
     key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.Z1ATwOQWPvWrvZReWK7h8c0QjvBu8_NHclta7qOFgLQ"
-    client = QdrantClient(url=url, api_key=key, check_compatibility=False)
+    client = QdrantClient(url=url, api_key=key)
 
     # Embedding model
     embedding_model = SentenceTransformer("Alibaba-NLP/gte-multilingual-base",
