@@ -21,7 +21,7 @@ def init_services():
     """Khởi tạo các dịch vụ backend (AI, Qdrant, Embedding)"""
     # Gemini AI
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 
     # Qdrant client
     url = "https://4ef7f8a3-ee49-4cb5-b53b-41c05f890f41.europe-west3-0.gcp.cloud.qdrant.io:6333"
