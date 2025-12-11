@@ -10,7 +10,7 @@ import requests
 from io import BytesIO
 
 # Lấy API của gemini từ biến môi trường hoặc cấu hình trực tiếp
-GEMINI_API_KEY = "AIzaSyBcpultATCvfnBr3xwUeF-x3td_BgDlh2E"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 # Hide deprecation warnings
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -296,3 +296,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
